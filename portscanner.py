@@ -9,5 +9,9 @@ print(ascii_banner)
 if len(sys.argv) == 2:
   target = socket.gethostbyname(sys.argv[1])
 else:
-  print("invalid amount of arguments")
-  
+  print("invalid amount of arguments you must include a target IP address")
+
+print ("-" * 50)
+print("Scanning:", target)
+print("Scan started at:", str(datetime.now()))
+print ("-" * 50)
